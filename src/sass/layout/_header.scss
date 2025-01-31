@@ -10,7 +10,7 @@
 #menu {
     display: none;
 
-    /* Hacer funcionar el checkbox -> Hacer funcionar el menú hamburgüesa */
+    /* Hacer funcionar el checkbox -> (vista cel no se ve)Hacer funcionar el menú hamburgüesa */
 }
 
 /* ----------------------------------------------- */
@@ -18,14 +18,14 @@
 /* ----------------------------------------------- */
 
 .nav-bar {
-    background-color: mediumaquamarine;
-  /*   display: none; */
+    background-color: #FF5757;
+    display: none; 
 
     &__nav-list { /* .nav-bar__nav-list */
         display: flex;
         flex-direction: column;
         justify-content: center;
-        list-style-type: none;
+        list-style-type: none; /*No se muestre los puntos del <LI>*/
     }
 
     &__nav-item { /* .nav-bar__nav-item */
@@ -39,34 +39,30 @@
         padding: 1rem 2rem;
         color: white;
     }
+   
 }
 
+/* ----------------------------------------------- */
+/* SEARCH BUTTON                                         */
+/* ----------------------------------------------- */
+ .search_button{
+    background-color: #FF5757;
+    display: none;
+ }
 /* ----------------------------------------------- */
 /* SEARCH BAR                                          */
 /* ----------------------------------------------- */
 
 .search-bar {
-    display: flex;
-    background-color: olivedrab;
-    justify-content: space-around;
+    display:flex;
+    justify-content: space-between; /* Distribuir el espacio entre elementos */
+    background-color:#FF5757;
+    justify-content:space-around;
 
     &__logo-container { /* .search-bar__logo-container */
-        width: 18.75rem;
-        height: 3.75rem;
-    }
-
-    &__form-container { /* .search-bar__form-container */
-        padding: 1rem;
-
-        background-color: gold;
-        display: flex;
-        flex-basis: 100%;
-        justify-content: center;
-
-    }
-
-    &__form-label {
-        background-color: greenyellow;
+        height: 6.0rem;
+        width: 20rem;
+        text-align: center;
     }
 
     &__form-search {
@@ -74,13 +70,20 @@
     }
 
     &__form-submit {
-        background-color: darkslategray;
+        display: grid;  
+        place-items: center;
+        background-color:#FF5757;
+        color: white;
+        font-size: 40px; // Aumenta el tamaño 
     }
 
     &__carrito-container {
         /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
-        flex: 0 0 3rem; /* shorthand (grow shrink basis) */
-        background-color: goldenrod;
+        display: grid;  
+        place-items: center;
+        background-color: #FF5757;
+        color: white;
+        font-size: 40px; // Aumenta el tamaño 
     }
 }
 
@@ -91,26 +94,25 @@
 
 .menu-toogle{
     display: block;
-
-    background-color: red;
-    flex: 0 0 3rem;
+    background-color: #FF5757;
+    flex: 0 0 5rem; /*no crecerá, no se encogerá, y tendrá un tamaño base de 3rem*/
     position: relative;
     cursor: pointer; /* manito */
 
     &__label { /* .menu-toogle__label */
         display: block;
-        background-color: black;
+        background-color: #FF5757;
         height: 100%;
     }
     &__top-bread,
     &__meat,
     &__bottom-bread{
         display: block;
-        background-color: #333;
-        height: .2rem;
+        background-color: white;
+        height: .5rem;
         position:absolute;
-        left: .5rem;
-        right: .5rem;
+        left: .2rem;
+        right: .2rem;
     }
     &__top-bread{
         top:.8rem;
