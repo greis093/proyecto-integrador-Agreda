@@ -2,6 +2,16 @@
 
 
 body {
-    font-family: "Bungee Inline", serif;
+    font-family:'Courier New', Courier, monospace;
     font-size: 100%; // default navegadores 16px
 }
+span{
+    color: black;
+    white-space: nowrap;
+}
+
+bdi{
+    text-decoration: line-through;
+
+}
+

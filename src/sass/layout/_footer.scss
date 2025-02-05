@@ -1,0 +1,36 @@
+/* ----------------------------------------------- */
+/* FOOTER                                         */
+/* ----------------------------------------------- */
+/* MOBILE FIRST */
+.footer{
+    padding: 4px 0 4px 0px ;
+    color: white;
+
+    &__Title{
+        font-size: 7vw;
+        padding: 6px 0 6px 0px ;
+    }
+
+    &__Content{
+        font-size: 6vw;
+        padding: 5px 0 6px 0px ;
+    }
+
+    &__Social{
+        font-size: 6vw;
+        padding: 5px 10px 10px 10px ;
+    }
+    &__contenedor-tarjetas-mobil{
+        font-size: 10vw;
+        padding: 10px; 
+    }
+
+    &__StoreName{
+        display: block;
+        color: white;
+        font-size: 5vw;
+        padding: 5px; 
+    }
+}
+
+

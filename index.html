@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -49,12 +49,13 @@
         </div> <!-- .menu-toogle -->
 
         <div class="search-bar__logo-container">
-          <img class="card__image" src="imgs/flower_shop_logo.webp" alt="Logo de la floreria">
+          <img class="search-bar__logo" src="imgs/flower_shop_logo.webp" alt="Logo de la floreria">
         </div>
-        <button type="submit" class="search-bar__form-submit">
-              <i class="fa-solid fa-magnifying-glass"></i> <!--icono buscar -->
-          </button>
-      
+        <div class="search-bar__form-submit"> 
+          <button type="submit" class="search-bar__form-submit">
+            <i class="fa-solid fa-magnifying-glass"></i> <!--icono buscar -->
+        </button>
+        </div>
         <div class="search-bar__carrito-container"> 
           <nav>
             <i class="fa-solid fa-shop"></i> <!--icono tienda  -->
@@ -80,14 +81,20 @@
               <img class="card__image" src="imgs/ramo_premium_love.webp" alt="Ramo premium de 12 rosas">
             </div>
             <div class="card__content">
-              <h2 class="card__heading">Ramo Premium Love</h2>
+              <h2 class="card__heading"><a href="">Ramo Premium Love</a></h2>
               <div class="card__description">
-                <p>Ramo con 12 rosas y follaje verde + tarjeta con dedicatoria.</p>
+               <!-- <p>Ramo con 12 rosas y follaje verde + tarjeta con dedicatoria.</p>
                 <p>** El tipo de follaje puede variar de acuerdo a la disponibilidad.</p>
-                <p>** El color del papel de envoltura puede variar de acuerdo a la disponibilidad.  *** El color del papel de envoltura puede variar de acuerdo a la disponibilidad.</p>
-              </div>
+                <p>** El color del papel de envoltura puede variar de acuerdo a la disponibilidad.  *** El color del papel de envoltura puede variar de acuerdo a la disponibilidad.</p>-->
+                <span class="ProductItem__Price Price Price--highlight Text--subdued">
+                  <lomoney lo-currency-pen="25900" lo-currency="PEN" class="lomoney-processed">S/ 259.00</lomoney></span>
+                </span>
+                <bdi>
+                  <span  class="ProductItem__Price Price Price--compareAt Text--subdued">
+                    <lomoney lo-currency-pen="27900" lo-currency="PEN" class="lomoney-processed"> S/ 279.00</lomoney></span>   
+                </bdi>
+                </div>
             </div>
-            <button >Comprar</button>
           </article>
         </div> <!-- .card -->
 
@@ -97,14 +104,20 @@
               <img class="card__image" src="imgs/caja_6_rosas_premium.webp" alt="Caja de 6 rosas premium">
             </div>
             <div class="card__content">
-              <h2 class="card__heading">Caja de 6 rosas premium</h2>
+              <h2 class="card__heading"><a href="">Caja de 6 rosas premium</a></h2>
               <div class="card__description">
-                <p>Caja con 6 rosas + tarjeta con dedicatoria</p>
+                <!-- <p>Caja con 6 rosas + tarjeta con dedicatoria</p>
                 <p>** El tipo de follaje puede variar de acuerdo a la disponibilidad.</p>
-                <p>** El tono de las rosas puede variar.</p>
+                <p>** El tono de las rosas puede variar.</p>-->
+                <span class="ProductItem__Price Price Price--highlight Text--subdued"> 
+                  <lomoney lo-currency-pen="25900" lo-currency="PEN" class="lomoney-processed">S/ 259.00</lomoney></span>
+                </span>
+                <bdi>
+                  <span  class="ProductItem__Price Price Price--compareAt Text--subdued">
+                    <lomoney lo-currency-pen="27900" lo-currency="PEN" class="lomoney-processed"> S/ 279.00</lomoney></span>   
+                </bdi>
               </div>
             </div>
-            <button>Comprar</button>
           </article>
         </div> <!-- .card -->
 
@@ -114,17 +127,22 @@
               <img class="card__image" src="imgs/tulipanes_colores_premium.webp" alt="Ramo de 3 tulipanes de colores">
             </div>
             <div class="card__content">
-              <h2 class="card__heading">Ramo de tulipanes premium</h2>
+              <h2 class="card__heading"><a href="">Ramo de tulipanes premium</a></h2>
               <div class="card__description">
-                <p>Ramo de 3 Tulipanes + tarjeta con dedicatoria.</p>
+                <!-- <p>Ramo de 3 Tulipanes + tarjeta con dedicatoria.</p>
                 <p>** Los colores de los tulipanes se combinan de acuerdo a la disponibilidad.</p>
-                <p>** La tonalidad rosada de los tulipanes puede variar a una un poco más intensa o clara de acuerdo a la disponibilidad.</p>
+                <p>** La tonalidad rosada de los tulipanes puede variar a una un poco más intensa o clara de acuerdo a la disponibilidad.</p> -->
+                <span class="ProductItem__Price Price Price--highlight Text--subdued"> 
+                  <lomoney lo-currency-pen="25900" lo-currency="PEN" class="lomoney-processed">S/ 259.00</lomoney></span>
+                </span>
+                <bdi>
+                  <span  class="ProductItem__Price Price Price--compareAt Text--subdued">
+                    <lomoney lo-currency-pen="27900" lo-currency="PEN" class="lomoney-processed"> S/ 279.00</lomoney></span>   
+                </bdi>
               </div>
             </div>
             <div>
-              
             </div>
-            <button>Comprar</button>
           </article>
         </div> <!-- .card -->
 
@@ -134,14 +152,20 @@
               <img class="card__image" src="imgs/ramos-girasoles.webp" alt="Ramo de girasoles">
             </div>
             <div class="card__content">
-              <h2 class="card__heading">Ramo de Girasoles</h2>
+              <h2 class="card__heading"><a href="">Ramo de Girasoles</a></h2>
               <div class="card__description">
-                <p>Ramo de 10 girasoles + tarjeta con dedicatoria</p>
+                <!-- <p>Ramo de 10 girasoles + tarjeta con dedicatoria</p>
                 <p>** El tipo de follaje puede variar de acuerdo a la disponibilidad.</p>
-                <p>** El color del papel de envoltura puede variar de acuerdo a la disponibilidad.</p> 
+                <p>** El color del papel de envoltura puede variar de acuerdo a la disponibilidad.</p>  -->
+                <span class="ProductItem__Price Price Price--highlight Text--subdued"> 
+                  <lomoney lo-currency-pen="25900" lo-currency="PEN" class="lomoney-processed">S/ 259.00</lomoney></span>
+                </span>
+                <bdi>
+                  <span  class="ProductItem__Price Price Price--compareAt Text--subdued">
+                    <lomoney lo-currency-pen="27900" lo-currency="PEN" class="lomoney-processed"> S/ 279.00</lomoney></span>   
+                </bdi>
               </div>
             </div>
-            <button>Comprar</button>
           </article>
         </div> <!-- .card -->
 
@@ -151,14 +175,20 @@
               <img class="card__image" src="imgs/ramo_10_tulipanes.webp" alt="Ramo de 10 tulipanes de colores">
             </div>
             <div class="card__content">
-              <h2 class="card__heading">Ramo de tulipanes multicolor Premium</h2>
+              <h2 class="card__heading"><a href="">Ramo de tulipanes multicolor Premium</a></h2>
               <div class="card__description">
-                <p>Ramo de 10 Tulipanes + tarjeta con dedicatoria.</p>
+                <!-- <p>Ramo de 10 Tulipanes + tarjeta con dedicatoria.</p>
                 <p>** Los colores de los tulipanes se combinan de acuerdo a la disponibilidad.</p>
-                <p>** La tonalidad rosada de los tulipanes puede variar a una un poco más intensa o clara de acuerdo a la disponibilidad.</p> 
+                <p>** La tonalidad rosada de los tulipanes puede variar a una un poco más intensa o clara de acuerdo a la disponibilidad.</p>  -->
+                <span class="ProductItem__Price Price Price--highlight Text--subdued"> 
+                  <lomoney lo-currency-pen="25900" lo-currency="PEN" class="lomoney-processed">S/ 259.00</lomoney></span>
+                </span>
+                <bdi>
+                  <span  class="ProductItem__Price Price Price--compareAt Text--subdued">
+                    <lomoney lo-currency-pen="27900" lo-currency="PEN" class="lomoney-processed"> S/ 279.00</lomoney></span>   
+                </bdi>
               </div>
             </div>
-            <button>Comprar</button>
           </article>
         </div> <!-- .card -->
 
@@ -168,14 +198,20 @@
               <img class="card__image" src="imgs/regalo-floral-de-graduacion.webp" alt="Box Graduación de flores y un oso peluche">
             </div>
             <div class="card__content">
-              <h2 class="card__heading">Box Graduación Premium</h2>
+              <h2 class="card__heading"><a href="">Box Graduación Premium</a></h2>
               <div class="card__description">
-                <p>Arreglo floral con rosas.</p>
+                <!-- <p>Arreglo floral con rosas.</p>
                 <p>Esta acompañado de un adorable oso de peluche + topper 'Happy San Valentin'.</p>
-                <p>** El diseño del vestido del osito puede variar deacuerdo a la disponibilidad.</p> 
+                <p>** El diseño del vestido del osito puede variar deacuerdo a la disponibilidad.</p>  -->
+                <span class="ProductItem__Price Price Price--highlight Text--subdued"> 
+                  <lomoney lo-currency-pen="25900" lo-currency="PEN" class="lomoney-processed">S/ 259.00</lomoney></span>
+                </span>
+                <bdi>
+                  <span  class="ProductItem__Price Price Price--compareAt Text--subdued">
+                    <lomoney lo-currency-pen="27900" lo-currency="PEN" class="lomoney-processed"> S/ 279.00</lomoney></span>   
+                </bdi>
               </div>
             </div>
-            <button>Comprar</button>
           </article>
         </div>
         
@@ -185,14 +221,20 @@
               <img class="card__image" src="imgs/arreglo_floral_amor.webp" alt="Arreglo floral con un oso peluche">
             </div>
             <div class="card__content">
-              <h2 class="card__heading">Box San Valentin</h2>
+              <h2 class="card__heading"><a href="">Box San Valentin</a></h2>
               <div class="card__description">
-                <p>Ramo de 12 Rosas + tarjeta con dedicatoria.</p>
+                <!-- <p>Ramo de 12 Rosas + tarjeta con dedicatoria.</p>
                 <p>Esta acompañado de un adorable oso de peluche + topper 'Happy San Valentin'.</p>
-                <p>** El diseño del vestido del osito puede variar deacuerdo a la disponibilidad.</p> 
+                <p>** El diseño del vestido del osito puede variar deacuerdo a la disponibilidad.</p>  -->
+                <span class="ProductItem__Price Price Price--highlight Text--subdued"> 
+                  <lomoney lo-currency-pen="25900" lo-currency="PEN" class="lomoney-processed">S/ 259.00</lomoney></span>
+                </span>
+                <bdi>
+                  <span  class="ProductItem__Price Price Price--compareAt Text--subdued">
+                    <lomoney lo-currency-pen="27900" lo-currency="PEN" class="lomoney-processed"> S/ 279.00</lomoney></span>   
+                </bdi>
               </div>
             </div>
-            <button>Comprar</button>
           </article>
         </div><!-- .card -->
 
@@ -204,32 +246,61 @@
             </div>
 
             <div class="card__content">
-              <h2 class="card__heading">Box Chocofresas Premium</h2>
+              <h2 class="card__heading"><a href="">Box Chocofresas Premium</a></h2>
               <div class="card__description">
-                <p>Box de 10 rosas + 20 fresas con toppings.</p>
+                <!-- <p>Box de 10 rosas + 20 fresas con toppings.</p>
                 <p>Esta acompañado de un Riccadonna +  en base de lata resistente y duradera.</p>
-                <p>** El tono de rosas puede variar un poco deacuerdo a la disponibilidad.</p> 
+                <p>** El tono de rosas puede variar un poco deacuerdo a la disponibilidad.</p>  -->
+                <span class="ProductItem__Price Price Price--highlight Text--subdued"> 
+                  <lomoney lo-currency-pen="25900" lo-currency="PEN" class="lomoney-processed">S/ 259.00</lomoney></span>
+                </span>
+                <bdi>
+                  <span  class="ProductItem__Price Price Price--compareAt Text--subdued">
+                    <lomoney lo-currency-pen="27900" lo-currency="PEN" class="lomoney-processed"> S/ 279.00</lomoney></span>   
+                </bdi>
               </div>
             </div>
-            <button>Comprar</button>
           </article>
         </div><!-- .card -->
- <!-- .card -->
-        
 
       </section>
-
-
     </main>
-
-
-
-
-
-
-
-
+    <div id="shopify-section-footer" class="shopify-section--footer">
+      <footer id="section-footer" data-section-id="footer" data-section-type="footer" class="footer">
+        <div class="shopify-section--footer__container-footer">
+        <div class="shopify-section--footer__text">
+          <h2 class="footer__Title">Florería bloom Yirley</h2>
+          <div class="shopify-section-footer__Content">
+            <div class="footer__Content">
+              <p>992 923 999</p><p>floreriabloomyirley.com</p>
+            </div>
+            <div class="footer__Social">
+               <a href="" class="Link Link--primary" target="_blank" rel="noopener" aria-label="Facebook">
+                  <span class="Icon-Wrapper--clickable">
+                    <i class="fa-brands fa-facebook-f" style="color: #ffffff"></i>
+              </span>
+                </a>
+                               
+           <a href="" class="Link Link--primary" target="_blank" rel="noopener" aria-label="Instagram">
+                  <span class="Icon-Wrapper--clickable">
+                    <i class="fa-brands fa-instagram" style="color: #ffffff"></i>
+                  </span>
+                </a>
+            </div>
+          </div>
+        </div>
+        <div class="shopify-section__Footer footer__contenedor-tarjetas-mobil">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-brands fa-cc-diners-club"></i>
+        </div>
+        </div>
+        <div class="footer__Copyright">
+          <a href="/" class="footer__StoreName">© Florería Bloom Yirley</a>
+        <a href="/"  class="footer__StoreName" title="Shopify">Desarrollado por YIAP</a>
+        </div> <!-- .footer__Copyright -->
+      </footer>
+    </div> <!-- .shopify-section--footer -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
-Consulta la disponibilidad para realizar el envío HOY

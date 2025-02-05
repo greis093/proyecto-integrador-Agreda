@@ -5,6 +5,7 @@
 .main-header {
     display: flex;
     flex-direction: column-reverse;
+   
 }
 
 #menu {
@@ -20,12 +21,10 @@
 .nav-bar {
     background-color: #FF5757;
     display: none; 
-
-    &__nav-list { /* .nav-bar__nav-list */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        list-style-type: none; /*No se muestre los puntos del <LI>*/
+    @media screen and (min-width: 992px) {
+        & {
+            flex-direction: row;
+        } 
     }
 
     &__nav-item { /* .nav-bar__nav-item */
@@ -39,6 +38,11 @@
         padding: 1rem 2rem;
         color: white;
     }
+    @media screen and (min-width: 992px) {
+        & {
+            display: block;
+        }
+    }
    
 }
 
@@ -46,8 +50,11 @@
 /* SEARCH BUTTON                                         */
 /* ----------------------------------------------- */
  .search_button{
+    display: flex;
     background-color: #FF5757;
+    justify-content: space-around;
     display: none;
+   
  }
 /* ----------------------------------------------- */
 /* SEARCH BAR                                          */
@@ -55,35 +62,42 @@
 
 .search-bar {
     display:flex;
-    justify-content: space-between; /* Distribuir el espacio entre elementos */
     background-color:#FF5757;
     justify-content:space-around;
+    width: 100%;
+    align-items: center;
 
-    &__logo-container { /* .search-bar__logo-container */
-        height: 6.0rem;
-        width: 20rem;
+    &__logo-container{
+        width:60vw;
         text-align: center;
+    }
+    
+    &__logo { /* .search-bar__logo-container */
+        height: auto;
+        width: auto;
+        object-fit: contain;
+        width:40vw;
     }
 
     &__form-search {
         background-color: deeppink;
     }
 
-    &__form-submit {
-        display: grid;  
-        place-items: center;
-        background-color:#FF5757;
+    &__form-submit { 
+        text-align: center; /* Centra horizontalmente */
+        align-self: center;/* Centra verticalmente */
         color: white;
-        font-size: 40px; // Aumenta el tamaño 
+        background-color:#FF5757;
+        font-size: 6vw; // Aumenta el tamaño 
     }
 
     &__carrito-container {
-        /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
-        display: grid;  
-        place-items: center;
-        background-color: #FF5757;
+        /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */ 
+  
+        text-align: center; /* Centra horizontalmente */
+        align-self: center;/* Centra verticalmente */
         color: white;
-        font-size: 40px; // Aumenta el tamaño 
+        font-size: 6vw; // Aumenta el tamaño 
     }
 }
 
@@ -95,7 +109,7 @@
 .menu-toogle{
     display: block;
     background-color: #FF5757;
-    flex: 0 0 5rem; /*no crecerá, no se encogerá, y tendrá un tamaño base de 3rem*/
+    flex: 0 0 3rem; /*  0 0 3rem no crecerá, no se encogerá, y tendrá un tamaño base de 3rem*/
     position: relative;
     cursor: pointer; /* manito */
 
@@ -109,19 +123,24 @@
     &__bottom-bread{
         display: block;
         background-color: white;
-        height: .5rem;
+        height: .3rem;
         position:absolute;
-        left: .2rem;
-        right: .2rem;
+        left: 0rem;
+        right: 0rem;
     }
     &__top-bread{
-        top:.8rem;
+        top:1rem;
     }
-    &__meat {
-        top:50%;
-        margin-top: -.1rem;
+    &__meat { /*Centrar sin usar flexbox */
+        top:50%; /*Se centre al 50% del elemento (vertical)*/
+        margin-top: -0.2rem; /*al left le resto la mitad lo que mide */
     }
     &__bottom-bread{
-        bottom: .8rem;
+        bottom: 1rem;
+    }
+    @media screen and (min-width: 992px) {
+        & { /* .menu-toogle */
+            display: none;
+        }
     }
 }

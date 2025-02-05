@@ -2,9 +2,29 @@
     background-color: #f1f2f3;
     padding: 1rem;
 }
-.cards-container{
-    display: flex;
+.cards-container{ 
+    /*Si lo realizo por flexbox */
+    /*display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 1rem;*/
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;  /*Espacio entre elementos*/
 }
+@media (min-width: 576px) {  
+    .cards-container {  
+        grid-template-columns: repeat(auto-fill, minmax(576px, 2fr));  
+        max-width: 100%;
+    }  
+    }
+
+
+    .shopify-section--footer{
+        text-align: center; 
+        background-color: #09033e;
+        display: flex;
+        justify-content:center;
+        overflow: hidden;
+        }
