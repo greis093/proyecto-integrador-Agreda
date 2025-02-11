@@ -1,10 +1,7 @@
 .card {
     margin: 0 auto; /*Centrar el div*/
     height: auto;
-
-   
     overflow: hidden;
-   
     transition: transform .2s; /* ! No puede ser all */
 
     &:hover,
@@ -27,11 +24,16 @@
     &__heading{
         display: flex;
         justify-content: center;
+        font-size: 5vw;
+        padding: 1.8px;
     }
     &__content{
         display: block;
         text-align: center;
         width: 80vw;
+    }
+    &__description{
+        font-size: 5vw;
     }
 
 
@@ -44,7 +46,7 @@
     }
 
     &:nth-child(5n + 3) {
-        background-image: linear-gradient(to top, #ff1b6b 0%, #34caff 100%);
+        background-image: linear-gradient(to top, #f36094 0%, #34caff 100%);
     }
 
     &:nth-child(5n + 4) {
@@ -52,7 +54,7 @@
     }
 
     &:nth-child(5n + 5) {
-        background-image: linear-gradient(to top, #ff0f7b 0%, #f89b29 100%);
+        background-image: linear-gradient(to top, #ef80f3 0%, #f89b29 100%);
     }
 
     &__image-container {
@@ -67,6 +69,32 @@
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); /* Estado final */
     }
 
+
+    /* Responsive ->  max 576px */
+    @media screen and (min-width: 576px){
+        & { /* .card */
+            width: 40vw;
+            
+            &__image {
+                object-fit:cover;
+                width: 40vw;
+               } 
+    }
+    &__heading{
+        display: flex;
+        justify-content: center;
+        font-size: 4.5vw;
+    }
+    &__content{
+        display: block;
+        text-align: center;
+        width: 40vw;
+    }
+    &__description{
+        font-size: 3.3vw;
+    }
+    }
+   
     /* Responsive ->  992px */
 
     @media screen and (min-width: 992px) {

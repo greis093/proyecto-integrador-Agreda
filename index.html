@@ -30,14 +30,15 @@
         </ul>
       </nav> <!-- .nav-bar -->
 
-      <div class="search_button">
+      <input type="checkbox" id="buscar">
+      <nav  class="search_button">
           <button type="submit" class="search-bar__form-submit">
             <nav>
               <i class="fa-solid fa-magnifying-glass"></i> <!--icono buscar -->
             </nav>
           </button>
           <input type="search" id="busqueda" class="search-bar__form-search"  placeholder="BUSCAR">
-      </div> <!-- .search_button -->
+      </nav> <!-- .search_button -->
 
       <div class="search-bar">
         <div class="menu-toogle">
@@ -50,11 +51,12 @@
 
         <div class="search-bar__logo-container">
           <img class="search-bar__logo" src="imgs/flower_shop_logo.webp" alt="Logo de la floreria">
-        </div>
-        <div class="search-bar__form-submit"> 
-          <button type="submit" class="search-bar__form-submit">
-            <i class="fa-solid fa-magnifying-glass"></i> <!--icono buscar -->
-        </button>
+        </div >
+        <div class="button-buscador">
+          <label for="buscar" class="search_button__form-submit"> 
+              <i class="fa-solid fa-magnifying-glass"></i> <!--icono buscar -->
+          
+          </label>
         </div>
         <div class="search-bar__carrito-container"> 
           <nav>

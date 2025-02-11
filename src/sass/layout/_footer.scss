@@ -28,9 +28,22 @@
     &__StoreName{
         display: block;
         color: white;
-        font-size: 5vw;
+        font-size: 4vw;
         padding: 5px; 
+        text-decoration: none;
     }
+        /* MEDIUM FIRST */
+        @media screen and (min-width: 576px){
+            &__Title{
+                font-size: 4vw;
+                padding: 6px 0 6px 0px ;
+            }
+            &__Content{
+                font-size: 3vw;
+                padding: 5px 0 6px 0px ;
+            }
+        }
+   
 }
 
 
