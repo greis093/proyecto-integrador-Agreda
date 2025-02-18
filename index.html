@@ -5,40 +5,42 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/81c431d755.js" crossorigin="anonymous"></script>
-    <title>Proyecto Integrador - Inicio</title>
+    <title>Flower Bloom Yirley</title>
   </head>
   <body>
 
     <header class="main-header">
       <input type="checkbox" id="menu">
-
       <nav class="nav-bar">
         <ul class="nav-bar__nav-list">
           <!-- li*4.nav-bar__nav-item>a.nav-bar__nav-link{Inicio} -->
           <li class="nav-bar__nav-item">
-            <a href="" class="nav-bar__nav-link">Inicio</a>
+            <a href="./index.html" class="nav-bar__nav-link">Inicio</a>
           </li>
           <li class="nav-bar__nav-item">
-            <a href="" class="nav-bar__nav-link">Nosotros</a>
+            <a href="./nosotros.html" class="nav-bar__nav-link">Nosotros</a>
           </li>
           <li class="nav-bar__nav-item">
-            <a href="" class="nav-bar__nav-link">Tienda</a>
+            <a href="./tienda.html" class="nav-bar__nav-link">Tienda</a>
           </li>
           <li class="nav-bar__nav-item">
-            <a href="" class="nav-bar__nav-link">Contacto</a>
+            <a href="./contacto.html" class="nav-bar__nav-link">Contacto</a>
           </li>
         </ul>
       </nav> <!-- .nav-bar -->
 
       <input type="checkbox" id="buscar">
-      <nav  class="search_button">
-          <button type="submit" class="search-bar__form-submit">
-            <nav>
-              <i class="fa-solid fa-magnifying-glass"></i> <!--icono buscar -->
-            </nav>
-          </button>
-          <input type="search" id="busqueda" class="search-bar__form-search"  placeholder="BUSCAR">
-      </nav> <!-- .search_button -->
+      <div  class="search_button">
+        <div class="search_button__form-submit">
+          <button type="submit" class="search_button__form-submit__buscar">
+            <i class="fa-solid fa-magnifying-glass"></i> <!--icono buscar -->
+        </button>
+        <input type="search" id="busqueda" class="search_button__form-search"  placeholder="Busca y descubre"> 
+        <button type="submit" class="search_button__form-submit__eliminar">
+          <i class="fa-solid fa-x"></i> <!--icono eliminar -->
+      </button>
+        </div>
+      </div> <!-- .search_button -->
 
       <div class="search-bar">
         <div class="menu-toogle">
@@ -55,7 +57,6 @@
         <div class="button-buscador">
           <label for="buscar" class="search_button__form-submit"> 
               <i class="fa-solid fa-magnifying-glass"></i> <!--icono buscar -->
-          
           </label>
         </div>
         <div class="search-bar__carrito-container"> 

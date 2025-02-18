@@ -4,6 +4,12 @@
 @use './pages/inicio';
 @use './components/cards';
 @use './layout/footer';
+@use './pages/nosotros';
+@use './components/nosot';
+@use './pages/contacto';
+@use './components/contac';
+@use './pages/tienda';
+@use './components/tiend';
 /* Estructura 7 en 1.
 ! base -> todos los estilos de inicio
 -> _reset.scss

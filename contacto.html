@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/81c431d755.js" crossorigin="anonymous"></script>
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="main-header">
+        <input type="checkbox" id="menu">
+  
+        <nav class="nav-bar">
+          <ul class="nav-bar__nav-list">
+            <!-- li*4.nav-bar__nav-item>a.nav-bar__nav-link{Inicio} -->
+            <li class="nav-bar__nav-item">
+              <a href="./index.html" class="nav-bar__nav-link">Inicio</a>
+            </li>
+            <li class="nav-bar__nav-item">
+              <a href="./nosotros.html" class="nav-bar__nav-link">Nosotros</a>
+            </li>
+            <li class="nav-bar__nav-item">
+              <a href="./tienda.html" class="nav-bar__nav-link">Tienda</a>
+            </li>
+            <li class="nav-bar__nav-item">
+              <a href="./contacto.html" class="nav-bar__nav-link">Contacto</a>
+            </li>
+          </ul>
+        </nav> <!-- .nav-bar -->
+  
+        <input type="checkbox" id="buscar">
+        <div  class="search_button">
+          <div class="search_button__form-submit">
+            <button type="submit" class="search_button__form-submit__buscar">
+              <i class="fa-solid fa-magnifying-glass"></i> <!--icono buscar -->
+          </button>
+          <input type="search" id="busqueda" class="search_button__form-search"  placeholder="Busca y descubre"> 
+          <button type="submit" class="search_button__form-submit__eliminar">
+            <i class="fa-solid fa-x"></i> <!--icono eliminar -->
+        </button>
+          </div>
+        </div> <!-- .search_button -->
+  
+        <div class="search-bar">
+          <div class="menu-toogle">
+            <label for="menu" class="menu-toogle__label">
+              <span class="menu-toogle__top-bread"></span>
+              <span class="menu-toogle__meat"></span>
+              <span class="menu-toogle__bottom-bread"></span>
+            </label>
+          </div> <!-- .menu-toogle -->
+  
+          <div class="search-bar__logo-container">
+            <img class="search-bar__logo" src="imgs/flower_shop_logo.webp" alt="Logo de la floreria">
+          </div >
+          <div class="button-buscador">
+            <label for="buscar" class="search_button__form-submit"> 
+                <i class="fa-solid fa-magnifying-glass"></i> <!--icono buscar -->
+            </label>
+          </div>
+          <div class="search-bar__carrito-container"> 
+            <nav>
+              <i class="fa-solid fa-shop"></i> <!--icono tienda  -->
+            </nav>
+          </div>
+        </div> <!-- .search-bar -->
+      </header>
+      <main>
+        <section class="section-encuentranos">
+            <header class="header">
+                    <h1>Encuentranos</h1>
+            </header>
+        </section>
+       
+        <section class="informacion-container">
+          <div class="information">
+            <div class="information__values">
+              <div class="information__values__icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="information__values__text">
+                <h3>Dirección Principal</h3>
+                <p>Jiron Pucara 249 Callao</p>
+              </div>
+          </div>
+          <div class="information__values">
+            <div class="information__values__icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="information__values__text">
+              <h3>Teléfonos</h3>
+              <p>+51 992923999 </p>
+              <p>+51 939419500</p>
+            </div>
+        </div>
+        <div class="information__values">
+        <div class="information__values__icon">
+          <i class="fa-solid fa-user-clock"></i>
+        </div>
+        <div class="information__values__text">
+          <h3>Horario</h3>
+          <p>Lunes a Sábado de 9:00 am – 6:00 pm. Domingos y feriados de 10am a 2pm.</p>
+        </div>
+      </div>
+
+    <div class="information__values">
+      <div class="information__values__icon">
+        <i class="fa-solid fa-envelope"></i>
+         </div>
+      <div class="information__values__text">
+        <h3>Correo</h3>
+        <p>info@blomm.com.pe</p>
+        </div>
+        </div>
+  </div>
+          <div class="information">
+          <form class="formulario">
+            <fieldset >
+              <legend class="formulario__title">Envíanos un mensaje</legend>
+            <div class="formulario__data">
+              <label for="name" >Nombre y apellido *</label>
+              <input class="formulario__container" type="text" id="name" name="nombres" maxlength="25" required>
+            </div>
+          
+          <div class="formulario__data">
+            <label for="cel" >Celular *</label>
+            <input class="formulario__container" type="number" id="cel" name="celular"  required>
+          </div>
+            
+          <div class="formulario__data">
+            <label for="correo" >Correo electrónico *</label>
+            <input class="formulario__container" type="email" id="correo" name="correo" required>
+          </div>
+            
+          <div class="formulario__data">
+            <label for="mensaje" >Mensaje *</label>
+            <textarea class="formulario__container__msj" type="text" id="mensaje" name="mensaje" maxlength="100" required> </textarea>
+          </div>
+          <div class="formulario__boton">
+            <button class="formulario__boton__enviar" type="submit">Enviar</button>
+
+          </div>
+          </fieldset>
+          </form>
+        </div>
+        </section>
+        
+         
+      
+      </main>
+      <div id="shopify-section-footer" class="shopify-section--footer">
+        <footer id="section-footer" data-section-id="footer" data-section-type="footer" class="footer">
+          <div class="shopify-section--footer__container-footer">
+          <div class="shopify-section--footer__text">
+            <h2 class="footer__Title">Florería bloom Yirley</h2>
+            <div class="shopify-section-footer__Content">
+              <div class="footer__Content">
+                <p>992 923 999</p><p>floreriabloomyirley.com</p>
+              </div>
+              <div class="footer__Social">
+                 <a href="" class="Link Link--primary" target="_blank" rel="noopener" aria-label="Facebook">
+                    <span class="Icon-Wrapper--clickable">
+                      <i class="fa-brands fa-facebook-f" style="color: #ffffff"></i>
+                </span>
+                  </a>
+                                 
+             <a href="" class="Link Link--primary" target="_blank" rel="noopener" aria-label="Instagram">
+                    <span class="Icon-Wrapper--clickable">
+                      <i class="fa-brands fa-instagram" style="color: #ffffff"></i>
+                    </span>
+                  </a>
+              </div>
+            </div>
+          </div>
+          <div class="shopify-section__Footer footer__contenedor-tarjetas-mobil">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-diners-club"></i>
+          </div>
+          </div>
+          <div class="footer__Copyright">
+            <a href="/" class="footer__StoreName">© Florería Bloom Yirley</a>
+          <a href="/"  class="footer__StoreName" title="Shopify">Desarrollado por YIAP</a>
+          </div> <!-- .footer__Copyright -->
+        </footer>
+      </div> <!-- .shopify-section--footer -->
+      <script type="module" src="/src/main.js"></script>
+</body>
+</html>
