@@ -1,7 +1,9 @@
-import productos from "./db/productos";
-import "./sass/main.scss";
+import productos from "../../db/productos";
+import "../../sass/main.scss";
 
-const contenedorProductos = document.getElementById("container-productos");
+const contenedorProductosTienda = document.getElementById(
+  "container-productos-tienda"
+);
 
 const start = () => {
   console.warn("se cargo todo el HTML");
@@ -13,14 +15,14 @@ const start = () => {
 
     //html =html + '' === html +=''
 
-    html += ` <div class="card">
-    <article class="card__article">
-        <div class="card__image-container">
-            <img class="card__image" src="${prod.foto}" alt="${prod.nombre}">
+    html += ` <div class="card-tienda">
+    <article class="card-tienda__article">
+        <div class="card-tienda__image-container">
+            <img class="card-tienda__image" src="../../../public/${prod.foto}" alt="${prod.nombre}">
         </div>
-        <div class="card__content">
-            <h2 class="card__heading"><a href="">${prod.nombre}</a></h2>
-        <div class="card__description">
+        <div class="card-tienda__content">
+            <h2 class="card-tienda__heading"><a href="">${prod.nombre}</a></h2>
+        <div class="card-tienda__description">
             <span class="ProductItem__Price Price Price--highlight Text--subdued">
                  <lomoney lo-currency-pen="25900" lo-currency="PEN" class="lomoney-processed">"${prod.precio}"</lomoney></span>
             </span>
@@ -33,6 +35,6 @@ const start = () => {
     </article>
     </div>`;
   });
-  contenedorProductos.innerHTML = html;
+  contenedorProductosTienda.innerHTML = html;
 };
 window.addEventListener("DOMContentLoaded", start);
