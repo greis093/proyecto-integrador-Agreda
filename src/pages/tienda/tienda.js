@@ -18,7 +18,7 @@ const start = () => {
     html += ` <div class="card-tienda">
     <article class="card-tienda__article">
         <div class="card-tienda__image-container">
-            <img class="card-tienda__image" src="../../../public/${prod.foto}" alt="${prod.nombre}">
+            <img class="card-tienda__image" src="../../../${prod.foto}" alt="${prod.nombre}">
         </div>
         <div class="card-tienda__content">
             <h2 class="card-tienda__heading"><a href="">${prod.nombre}</a></h2>
