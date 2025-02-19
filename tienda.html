@@ -21,6 +21,9 @@
             <a href="./nosotros.html" class="nav-bar__nav-link">Nosotros</a>
           </li>
           <li class="nav-bar__nav-item">
+            <a href="" class="nav-bar__nav-link">Alta</a>
+          </li>
+          <li class="nav-bar__nav-item">
             <a href="./tienda.html" class="nav-bar__nav-link">Tienda</a>
           </li>
           <li class="nav-bar__nav-item">
@@ -91,24 +94,55 @@
           <p>Tipo de arreglo</p>
         </div>
         <div class="nav-bar-tienda__filtros">
-          <input type="checkbox" class="nav-bar-tienda__nav-item"> Areglo floral en ramo<br>
-          <input type="checkbox" class="nav-bar-tienda__nav-item"> Areglo floral en caja<br>
-          <input type="checkbox" class="nav-bar-tienda__nav-item"> Areglo floral en Box<br>
+          <input type="checkbox" class="nav-bar-tienda__nav-item"> Ramos de rosas<br>
+          <input type="checkbox" class="nav-bar-tienda__nav-item"> Ramos de girasoles<br>
+          <input type="checkbox" class="nav-bar-tienda__nav-item"> Ramo de tulipanes<br>
+          <input type="checkbox" class="nav-bar-tienda__nav-item"> Caja de rosas<br>
+          <input type="checkbox" class="nav-bar-tienda__nav-item"> Caja de tulipanes<br>
+          <input type="checkbox" class="nav-bar-tienda__nav-item"> Caja de girasoles<br>
         </div>
+
+         <!-- filtro de precio -->
+          <div class="price">
+            <div class="price__title">
+              <p>Filtrar por precio</p>
+            </div>
+         <div class="price__input" >
+          <div class="price__field">
+            <span>S/</span>
+            <input type="number" class="input-min" value="2500" readonly>
+          </div>
+          <div class="price__separator">-</div>
+          <div class="price__field">
+            <span>S/</span>
+            <input type="number" class="input-max" value="7500" readonly>
+          </div>
+        </div>
+        <div class="price__slider">
+          <div class="progress"></div>
+        </div>
+        <div class="range-input">
+          <input type="range" class="range-min" min="0" max="10000" value="2500" step="100" readonly>
+          <input type="range" class="range-max" min="0" max="10000" value="7500" step="100" readonly>
+        </div>
+      </div>
+          
+        <!-- Boton de filtro -->
         <div class="nav-bar-tienda__boton">
           <button class="nav-bar-tienda__boton__busqueda">Filtrar</button>
         </div>
+
       </nav>
 
       <div class="productos-container">
-        <div class="card">
-          <article class="card__article">
-            <div class="card__image-container">
-              <img class="card__image" src="imgs/ramo_premium_love.webp" alt="Ramo premium de 12 rosas">
+        <div class="card-tienda">
+          <article class="card-tienda__article">
+            <div class="card-tienda__image-container">
+              <img class="card-tienda__image" src="imgs/ramo_premium_love.webp" alt="Ramo premium de 12 rosas">
             </div>
-            <div class="card__content">
-              <h2 class="card__heading"><a href="">Ramo Premium Love</a></h2>
-              <div class="card__description">
+            <div class="card-tienda__content">
+              <h2 class="card-tienda__heading"><a href="">Ramo Premium Love</a></h2>
+              <div class="card-tienda__description">
                <!-- <p>Ramo con 12 rosas y follaje verde + tarjeta con dedicatoria.</p>
                 <p>** El tipo de follaje puede variar de acuerdo a la disponibilidad.</p>
                 <p>** El color del papel de envoltura puede variar de acuerdo a la disponibilidad.  *** El color del papel de envoltura puede variar de acuerdo a la disponibilidad.</p>-->
@@ -124,14 +158,14 @@
           </article>
         </div> <!-- .card -->
 
-        <div class="card">
-          <article class="card__article">
-            <div class="card__image-container">
-              <img class="card__image" src="imgs/caja_6_rosas_premium.webp" alt="Caja de 6 rosas premium">
+        <div class="card-tienda">
+          <article class="card-tienda__article">
+            <div class="card-tienda__image-container">
+              <img class="card-tienda__image" src="imgs/caja_6_rosas_premium.webp" alt="Caja de 6 rosas premium">
             </div>
-            <div class="card__content">
-              <h2 class="card__heading"><a href="">Caja de 6 rosas premium</a></h2>
-              <div class="card__description">
+            <div class="card-tienda__content">
+              <h2 class="card-tienda__heading"><a href="">Caja de 6 rosas premium</a></h2>
+              <div class="card-tienda__description">
                 <!-- <p>Caja con 6 rosas + tarjeta con dedicatoria</p>
                 <p>** El tipo de follaje puede variar de acuerdo a la disponibilidad.</p>
                 <p>** El tono de las rosas puede variar.</p>-->
@@ -147,14 +181,14 @@
           </article>
         </div> <!-- .card -->
 
-        <div class="card">
-          <article class="card__article">
-            <div class="card__image-container">
-              <img class="card__image" src="imgs/tulipanes_colores_premium.webp" alt="Ramo de 3 tulipanes de colores">
+        <div class="card-tienda">
+          <article class="card-tienda__article">
+            <div class="card-tienda__image-container">
+              <img class="card-tienda__image" src="imgs/tulipanes_colores_premium.webp" alt="Ramo de 3 tulipanes de colores">
             </div>
-            <div class="card__content">
-              <h2 class="card__heading"><a href="">Ramo de tulipanes premium</a></h2>
-              <div class="card__description">
+            <div class="card-tienda__content">
+              <h2 class="card-tienda__heading"><a href="">Ramo de tulipanes premium</a></h2>
+              <div class="card-tienda__description">
                 <!-- <p>Ramo de 3 Tulipanes + tarjeta con dedicatoria.</p>
                 <p>** Los colores de los tulipanes se combinan de acuerdo a la disponibilidad.</p>
                 <p>** La tonalidad rosada de los tulipanes puede variar a una un poco más intensa o clara de acuerdo a la disponibilidad.</p> -->
@@ -172,14 +206,14 @@
           </article>
         </div> <!-- .card -->
 
-        <div class="card">
-          <article class="card__article">
-            <div class="card__image-container">
-              <img class="card__image" src="imgs/ramos-girasoles.webp" alt="Ramo de girasoles">
+        <div class="card-tienda">
+          <article class="card-tienda__article">
+            <div class="card-tienda__image-container">
+              <img class="card-tienda__image" src="imgs/ramos-girasoles.webp" alt="Ramo de girasoles">
             </div>
-            <div class="card__content">
-              <h2 class="card__heading"><a href="">Ramo de Girasoles</a></h2>
-              <div class="card__description">
+            <div class="card-tienda__content">
+              <h2 class="card-tienda__heading"><a href="">Ramo de Girasoles</a></h2>
+              <div class="card-tienda__description">
                 <!-- <p>Ramo de 10 girasoles + tarjeta con dedicatoria</p>
                 <p>** El tipo de follaje puede variar de acuerdo a la disponibilidad.</p>
                 <p>** El color del papel de envoltura puede variar de acuerdo a la disponibilidad.</p>  -->
@@ -195,14 +229,14 @@
           </article>
         </div> <!-- .card -->
 
-        <div class="card">
-          <article class="card__article">
-            <div class="card__image-container">
-              <img class="card__image" src="imgs/ramo_10_tulipanes.webp" alt="Ramo de 10 tulipanes de colores">
+        <div class="card-tienda">
+          <article class="card-tienda__article">
+            <div class="card-tienda__image-container">
+              <img class="card-tienda__image" src="imgs/ramo_10_tulipanes.webp" alt="Ramo de 10 tulipanes de colores">
             </div>
-            <div class="card__content">
-              <h2 class="card__heading"><a href="">Ramo de tulipanes multicolor Premium</a></h2>
-              <div class="card__description">
+            <div class="card-tienda__content">
+              <h2 class="card-tienda__heading"><a href="">Ramo de tulipanes multicolor Premium</a></h2>
+              <div class="card-tienda__description">
                 <!-- <p>Ramo de 10 Tulipanes + tarjeta con dedicatoria.</p>
                 <p>** Los colores de los tulipanes se combinan de acuerdo a la disponibilidad.</p>
                 <p>** La tonalidad rosada de los tulipanes puede variar a una un poco más intensa o clara de acuerdo a la disponibilidad.</p>  -->
@@ -218,14 +252,14 @@
           </article>
         </div> <!-- .card -->
 
-        <div class="card">
-          <article class="card__article">
-            <div class="card__image-container">
-              <img class="card__image" src="imgs/regalo-floral-de-graduacion.webp" alt="Box Graduación de flores y un oso peluche">
+        <div class="card-tienda">
+          <article class="card-tienda__article">
+            <div class="card-tienda__image-container">
+              <img class="card-tienda__image" src="imgs/regalo-floral-de-graduacion.webp" alt="Box Graduación de flores y un oso peluche">
             </div>
-            <div class="card__content">
-              <h2 class="card__heading"><a href="">Box Graduación Premium</a></h2>
-              <div class="card__description">
+            <div class="card-tienda__content">
+              <h2 class="card-tienda__heading"><a href="">Box Graduación Premium</a></h2>
+              <div class="card-tienda__description">
                 <!-- <p>Arreglo floral con rosas.</p>
                 <p>Esta acompañado de un adorable oso de peluche + topper 'Happy San Valentin'.</p>
                 <p>** El diseño del vestido del osito puede variar deacuerdo a la disponibilidad.</p>  -->
@@ -241,14 +275,14 @@
           </article>
         </div>
         
-        <div class="card">
-          <article class="card__article">
-            <div class="card__image-container">
-              <img class="card__image" src="imgs/arreglo_floral_amor.webp" alt="Arreglo floral con un oso peluche">
+        <div class="card-tienda">
+          <article class="card-tienda__article">
+            <div class="card-tienda__image-container">
+              <img class="card-tienda__image" src="imgs/arreglo_floral_amor.webp" alt="Arreglo floral con un oso peluche">
             </div>
-            <div class="card__content">
-              <h2 class="card__heading"><a href="">Box San Valentin</a></h2>
-              <div class="card__description">
+            <div class="card-tienda__content">
+              <h2 class="card-tienda__heading"><a href="">Box San Valentin</a></h2>
+              <div class="card-tienda__description">
                 <!-- <p>Ramo de 12 Rosas + tarjeta con dedicatoria.</p>
                 <p>Esta acompañado de un adorable oso de peluche + topper 'Happy San Valentin'.</p>
                 <p>** El diseño del vestido del osito puede variar deacuerdo a la disponibilidad.</p>  -->
@@ -264,16 +298,16 @@
           </article>
         </div><!-- .card -->
 
-        <div class="card">
-          <article class="card__article">
+        <div class="card-tienda">
+          <article class="card-tienda__article">
             
-            <div class="card__image-container">
-              <img class="card__image" src="imgs/caja_de_fresas_con_chocolate_y_licor.webp" alt="Caja de fresas, chocolates y licor">
+            <div class="card-tienda__image-container">
+              <img class="card-tienda__image" src="imgs/caja_de_fresas_con_chocolate_y_licor.webp" alt="Caja de fresas, chocolates y licor">
             </div>
 
-            <div class="card__content">
-              <h2 class="card__heading"><a href="">Box Chocofresas Premium</a></h2>
-              <div class="card__description">
+            <div class="card-tienda__content">
+              <h2 class="card-tienda__heading"><a href="">Box Chocofresas Premium</a></h2>
+              <div class="card-tienda__description">
                 <!-- <p>Box de 10 rosas + 20 fresas con toppings.</p>
                 <p>Esta acompañado de un Riccadonna +  en base de lata resistente y duradera.</p>
                 <p>** El tono de rosas puede variar un poco deacuerdo a la disponibilidad.</p>  -->
@@ -328,5 +362,6 @@
       </footer>
     </div> <!-- .shopify-section--footer -->
     <script type="module" src="/src/main.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

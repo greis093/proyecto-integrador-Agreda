@@ -26,6 +26,102 @@
         display: none;
   }
 }
+.price{
+    &__title{
+        justify-items: left;
+        font-size: 25px;
+        margin-left:20px;
+        margin-bottom: 10px;
+    }
+    &__input{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        margin: 0px 10px 30px 0px;
+    }
+    &__field{
+        display: flex;
+        justify-items: center;
+        animation: none;
+        width:100px;
+        font-size: 29px;
+    }
+    &__separator{
+        display: flex;
+        font-size: 29px;
+    }
+    &__slider{
+        width: 80%;
+        justify-self: center;
+        height: 5px;
+        border-radius: 5px;
+        background: gray;
+        position: relative;
+    }
+    @media screen and (min-width: 576px){
+        &__title{
+            font-size: 30px;
+            margin-left:20px;
+            margin-bottom: 10px;
+        }
+    }
+}
+.input-min{
+    animation: none;
+    border: none;
+    width: 100%;
+    font-size: 20px;
+}
+.input-max{
+    animation: none;
+    border: none;
+    width: 100%;
+    font-size: 20px;
+}
+input[type="range"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    pointer-events: none;
+    position: absolute;
+   
+   
+}
+
+
+.slider .progress{
+    height: 5px;
+    left: 25%;
+    right: 25%;
+    background: transparent;
+    border-radius: 5px;
+    position: absolute;
+   
+}
+.range-input{
+   position:relative; 
+   margin-bottom: 20px;
+   width: 80%;
+    justify-self: center;
+   
+}
+
+.range-input input{
+    position:absolute;
+    top: -10px;
+    height: 5px;
+    background: none;
+    pointer-events: auto;
+    width: 100%; 
+}
+
+input[type="range"]::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    height: 5px;
+}
+
 .menu{
     &__catalogo{
         font-size: 25px;
@@ -50,11 +146,12 @@
 .nav-bar-tienda {
     padding-top: 10px;
     display: none;
-    width: 95%;
+    width: 90%;
+    justify-self: center;
     box-shadow: 1px 1px 20px 1px rgb(244, 178, 178) inset;
     border-radius: 20px;
     &__titulo{
-        font-size: 25px;
+        font-size: 2.5vh;
         text-align: center;
     }
     
@@ -82,18 +179,177 @@
 
     @media screen and (min-width: 576px){
         width: 80%;
+        &__titulo{
+            font-size: 30px;
+            text-align: center;
+        }
+        &__filtros{   
+        margin-left: 20px;
+        &____nav-item{
+         margin-top: 20px; 
+        }
+        }
     }
         /* DESKTOP ->  max 992px  */
     @media screen and (min-width: 992px) {
+        
         & {
             display: block;
+            justify-self: end;
             margin-top: 20px;
-            height: 40%;
-            width: 90%;
+            width: 95%;
+            height:fit-content;
+            &__titulo{
+                font-size: 3.5vh;
+                margin: 10px;
+            }
+            &__filtros{   
+                margin-left: 20px;
+                }
+            &__nav-item{
+                    margin-top: 20px;
+                }
           
         } 
               
     }
      
    
+}
+
+
+.card-tienda {
+    margin: 0 auto; /*Centrar el div*/
+    height: auto;
+    overflow: hidden;
+    transition: transform .2s; /* ! No puede ser all */
+    cursor:pointer;
+    &:hover,
+    &:focus {
+        /* radianes 2pi, gradianes 400, decimles 360 grados, vueltas 1turn  */
+        transform: scale(1.03) skew(0deg) rotate(2deg);
+        transform-origin: bottom;
+        box-shadow: 0px 7px 8px 0px rgba(0 ,0 ,0 ,1);
+    }
+    &__article {
+        display:block;
+    }
+    &__image {
+        object-fit:fill;
+        width: 70vw;    
+    }
+    &__heading{
+        display: flex;
+        justify-content: center;
+        font-size: 5vw;
+        padding: 1.8px;
+    }
+    &__content{
+        display: block;
+        text-align: center;
+        width: 70vw;
+    }
+    &__description{
+        font-size: 5vw;
+    }
+    &:nth-child(5n + 1) {
+        background-image: linear-gradient(to top, #aaafad 0%, #60efff 100%);
+    }
+    &:nth-child(5n + 2) {
+        background-image: linear-gradient(to top, #696eff 0%, #f8accf 100%);
+    }
+    &:nth-child(5n + 3) {
+        background-image: linear-gradient(to top, #f36094 0%, #34caff 100%);
+    }
+    &:nth-child(5n + 4) {
+        background-image: linear-gradient(to top, #ff930f 0%, #fff95b 100%);
+    }
+    &:nth-child(5n + 5) {
+        background-image: linear-gradient(to top, #ef80f3 0%, #f89b29 100%);
+    }
+    &__image-container {
+        text-align: center;
+        overflow:visible;     
+        clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%); /* Estado inicial */
+    }
+    &:hover &__image-container,
+    &:focus &__image-container {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); /* Estado final */
+    }
+
+    /* Responsive ->  max 576px */
+    @media screen and (min-width: 576px){
+        & { /* .card */
+            width: 40vw;
+            
+            &__image {
+                object-fit:cover;
+                width: 40vw;
+               } 
+    }
+    &__heading{
+        display: flex;
+        justify-content: center;
+        font-size: 4.5vw;
+    }
+    &__content{
+        display: block;
+        text-align: center;
+        width: 40vw;
+    }
+    &__description{
+        font-size: 3.3vw;
+    }
+    }
+   
+    /* Responsive ->  992px */
+
+    @media screen and (min-width: 992px) {
+        & { /* .card */
+            width: 30vw;
+            height: auto;
+            &__image {
+                object-fit:cover;
+                width: 30vw;
+               }
+            &__heading{
+                display: flex;
+                justify-content: center;
+                font-size: 3vw;
+            }
+            &__content{
+                display: block;
+                text-align: center;
+                width: 30vw;
+            }
+            &__description{
+                font-size: 3.3vw;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px){
+        & { /* .card */
+            width: 16vw;
+            height: auto;
+            &__image {
+                object-fit:cover;
+                width: 16vw;
+               }
+
+            &__heading{
+                display: flex;
+                justify-content: center;
+                font-size: 1.6vw;
+            }
+            &__content{
+                display: block;
+                text-align: center;
+                width: 16vw;
+            }
+            &__description{
+                font-size: 1.5vw;
+            }
+        }
+    }
 }

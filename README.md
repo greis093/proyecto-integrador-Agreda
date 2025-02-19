@@ -1,16 +1,18 @@
-# Creando el proyecto Vite para el integrador
+# Nombre: Yirley Greicy Agreda Pacheco
 
-```sh
-npm create vite@latest ./ -- --template vanilla
-```
+## URL GitHub: https://github.com/greis093/proyecto-integrador-Agreda.git
 
-## Instalamos dependencias
+## URL Netlify:
+
+## Creando el proyecto Vite para el
+
+### Comandos disponibles
 
 ```sh
 npm i
 ```
 
-## Arrancamos el servidor de desarrollo
+### Arranco servidor de desarollo
 
 ```sh
 npm run dev
@@ -23,6 +25,3 @@ npm i sass-embedded -D
 ```
 
 ## Agrego el archivo 'vite.config.js'
-
-
-

@@ -32,7 +32,12 @@
     gap: 25px;
     @media screen and (min-width: 992px){
         grid-template-columns: 35% 65%; 
-        gap:10px;  
+        
+    }
+    @media screen and (min-width: 1200px){
+        grid-template-columns: 20% 80%; 
+        gap:0px;
+        
     }
 }
 
@@ -66,8 +71,9 @@
     @media screen and (min-width: 1200px){
         &{
             display:grid;
-            grid-template-columns: repeat(3, 1fr);
-            padding: 20px 25px 20px 25px;  /*Espacio entre elementos*/
+            grid-template-columns: repeat(4, 1fr);
+            padding: 20px 0px 30px 15px;  /*Espacio entre elementos*/
+            gap:28px;
         }
     }
 }
